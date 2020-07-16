@@ -42,6 +42,7 @@ body {
 
 .main-content {
     display: flex;
+    flex-grow: 1;
     padding-top: 6em;
 }
 
@@ -82,6 +83,19 @@ body {
     text-align: center;
     font-size: 72px;
     padding-right: 4em;
+}
+
+.main-content .main-content-grid .car-image{
+    content: '';
+    display: block;
+    height: 90px;
+    background: url("./red-car.svg") 0 0 no-repeat;
+    background-size: contain;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    background-position: center left;
+    z-index: -2;
+    margin-left: 22px;
 }
 
 .main-content .main-content-grid .secondary-text {
@@ -146,6 +160,84 @@ body {
 .black-text {
     color:#19191b;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.wrapper .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .footer > * {
+    /* flex-grow: 1; */
+}
+
+.wrapper .footer .footer-links {
+    flex-basis: 5%;
+}
+
+.wrapper .footer .footer-links ul {
+    list-style: none;
+    padding-bottom: 2em;
+}
+
+.wrapper .footer .footer-links ul li {
+    margin-bottom: 16px;
+}
+
+.wrapper .footer .footer-links ul li:hover {
+    color: rgb(197, 64, 64);
+}
+
+.wrapper .footer .footer-text {
+    flex-basis: 60%;
+    text-align: left;
+  
+}
+
+.footer-text p {
+    /* border-left: 2px solid grey; */
+    box-shadow: -4px 0px 0px 0px #19191b;
+    /* outline: 4px solid red;
+  outline-offset: 30px; */
+    padding-left: 18px;
+}
+
+.wrapper .footer .footer-text-info {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 18px;
+}
+
+.footer-explore {
+    display:  flex;
+    align-items: center;
+    margin-right: 24px;
+    padding-bottom: 15px;
+}
+
+.footer-explore p {
+    margin: 0px 8px;
+    font-size: 24px;
+}
+
+.wrapper .footer .footer-text-info .footer-text-info-personal {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
 
 .main-content .main-content-grid .secondary-text .huge-text .black-white-gradient{
     background: -webkit-linear-gradient(left,black 25%, white 55%);
