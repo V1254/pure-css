@@ -18,9 +18,14 @@ git clone https://github.com/V1254/pure-css.git
 - Open the index.html file in the project.
 
 
-## Final Result:
+## Comparison:
 
-![Image of final product]("./implemented.png")
+**This is the initial design by AEA9:**
+
+![Initial Design](https://raw.githubusercontent.com/V1254/pure-css/master/supercarblondie/design.jpg)
+
+**This is what i've managed to implement** (not perfect but pretty close, please excuse the car picture >.<)
+![Image of final product](https://raw.githubusercontent.com/V1254/pure-css/master/supercarblondie/implemented.png)
 
 
 ## Lessons Learnt
